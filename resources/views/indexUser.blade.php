@@ -8,6 +8,7 @@
 <h1>Danh sách khách hàng</h1>
 <table border="1">
     <thead>
+    @foreach()
     <tr>
         <th>STT</th>
         <th>Họ và tên</th>
@@ -23,7 +24,7 @@
         <td>01234567890</td>
         <td>email.test@mail.com</td>
         <td>
-            <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a>
+            <a href="Route:">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a>
         </td>
     </tr>
     <tr>

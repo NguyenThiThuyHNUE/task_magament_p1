@@ -12,11 +12,47 @@
 */
 
 use Illuminate\Support\Facades\Route;
+Auth::routes();
 
-    Route::get('index','CustomerController@index');
-    Route::get('create','CustomerController@create');
-    Route::get('store','CustomerController@store');
-    Route::get('show','CustomerController@show');
-    Route::get('edit','CustomerController@edit');
-    Route::get('update','CustomerController@update');
-    Route::get('delete','CustomerController@delete');
+Route::middleware('locale')->prefix('user')->group(function (){
+    Route::get('home','UserController@home')->name('user.home');
+    Route::get('index','UserController@index')->name('user.index');
+    Route::get('create','UserController@create')->name('user.create');
+    Route::post('create','UserController@store')->name('user.store');
+    Route::get('show/{id}','UserController@show')->name('user.show');
+    Route::get('edit/{id}','UserController@edit')->name('user.edit');
+    Route::patch('edit/{id}','UserController@update')->name('user.update');
+    Route::get('{id}','UserController@delete')->name('user.delete');
+    Route::delete('{id}','UserController@delete')->name('user.delete');
+});
+
+Route::middleware('locale')->get('menu', 'menuController@index')->name('menu.index');
+
+Route::middleware('locale')->resource('products','ProductController');
+
+Route::middleware('locale')->resource('customers','CustomerController');
+
+
+Route::middleware('locale')->get('profile','ProfileController@show')->name('profile.show');
+Route::middleware('locale')->post('profile','ProfileController@show')->name('profile.show');
+
+Route::middleware('locale')->get('bills','BillController@index')->name('bill.index');
+Route::middleware('locale')->get('bills/show{id}','BillController@show')->name('bill.show');
+
+
+
+Route::middleware('locale')->get('huongque','HomeController@show')->name('display.show');
+Route::middleware('locale')->get('huongque/{id}','HomeController@show_id')->name('display.show_id');
+Route::middleware('locale')->get('/cart','ShoppingCartController@index')->name('cart.index');
+Route::middleware('locale')->get('/add-to-cart/{id}','ShoppingCartController@addToCart')->name('cart.addToCart');
+Route::middleware('locale')->get('/remove-to-cart/{id}','ShoppingCartController@removeProductIntoCart')->name('cart.removeProductIntoCart');
+Route::middleware('locale')->get('/update-to-cart/{id}','ShoppingCartController@updateProductIntoCart')->name('cart.updateProductIntoCart');
+
+
+Route::middleware('locale')->get('order','OrderController@create')->name('order.create');
+Route::middleware('locale')->post('order','OrderController@store')->name('order.store');
+
+Route::middleware('locale')->resource('feedbacks','FeedbackController');
+
+Route::post('change-lang/{lang}','LangController@ChangeLanguage')->name('change.language');
+
