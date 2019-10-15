@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b3ecf73-a983-4a7b-b25a-9a26fe44ed8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_10_100459_add_column_id_city_table_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_10_100459_add_column_id_city_table_products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -230,7 +227,7 @@
       <workItem from="1570761430180" duration="6441000" />
       <workItem from="1570892509702" duration="759000" />
       <workItem from="1570895396332" duration="665000" />
-      <workItem from="1571121940981" duration="614000" />
+      <workItem from="1571121940981" duration="2270000" />
     </task>
     <servers />
   </component>
