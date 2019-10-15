@@ -2,84 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b3ecf73-a983-4a7b-b25a-9a26fe44ed8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/BillRerositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/CustomerRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/FeedbackRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/ProductRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/UserRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/impl/BillRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/impl/CustomerRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/impl/FeedbackRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/impl/ProductRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/impl/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Service/BillServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Service/CustomerServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Service/FeedbackServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Service/ProductServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Service/UserServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Service/impl/BillService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Service/impl/CustomerService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Service/impl/FeedbackService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Service/impl/ProductService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Service/impl/UserService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/products.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wow.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/vi/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/vi/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/vi/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/vi/product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/vi/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/bill/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/bill/showid.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cart/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/createUser.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/createCustomer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/editCustomer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/showCustomer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/editUser.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/email/send.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/feedback/createFeedback.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/feedback/editFeedback.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/products.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/show_products/show_id_product.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/menu/menu.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/order/createCustomer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/order/thanhtoanthanhcong.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/product/createProduct.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/product/editProduct.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/product/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/product/showProduct.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/showUser_id.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/task_manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/task_manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/indexCustomer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/indexUser.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_10_100459_add_column_id_city_table_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_10_100459_add_column_id_city_table_products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +121,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Current_time" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -301,7 +227,10 @@
       <workItem from="1570641497502" duration="14000" />
       <workItem from="1570641963571" duration="10000" />
       <workItem from="1570690694893" duration="10258000" />
-      <workItem from="1570761430180" duration="1665000" />
+      <workItem from="1570761430180" duration="6441000" />
+      <workItem from="1570892509702" duration="759000" />
+      <workItem from="1570895396332" duration="665000" />
+      <workItem from="1571121940981" duration="614000" />
     </task>
     <servers />
   </component>
