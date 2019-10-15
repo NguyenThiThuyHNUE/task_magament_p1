@@ -14,7 +14,7 @@ class AddColumnIdCityTableProducts extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->integer('city_id');
+            $table->integer('city_id')->nullable();
         });
     }
 
