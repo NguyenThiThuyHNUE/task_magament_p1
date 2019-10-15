@@ -19,6 +19,7 @@ class CreateTableProduct extends Migration
             $table->integer('price');
             $table->string('hometown');
             $table->string('species');
+            $table->text('Image');
             $table->timestamps();
         });
     }
