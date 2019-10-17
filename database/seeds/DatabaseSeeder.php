@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call(update1_tabla_products_seeder::class);
         $this->call(citiesTableSeeder::class);
         $this->call(add_city_id_table_product::class);
+        $this->call(productTableSeeder::class);
 
     }
 }
