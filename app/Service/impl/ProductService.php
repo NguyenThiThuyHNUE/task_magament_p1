@@ -75,7 +75,7 @@ class ProductService implements ProductServiceInterface
             $fileName = $request->inputFileName;
             $newFileName = "$fileName.$fileExtension";
             $request->file('inputFile')->storeAs('public/images', $newFileName);
-            $product->image = $newFileName;
+            $product->Image = $newFileName;
         }
 
         return $this->productRepository->store($product);
