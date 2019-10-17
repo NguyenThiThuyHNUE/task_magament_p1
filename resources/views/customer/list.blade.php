@@ -29,7 +29,7 @@
                                 <td>{{$customer['name']}}</td>
                                 <td>{{$customer['address']}}</td>
                                 <td>{{$customer['phone']}}</td>
-                                <td><img src="{{asset(''.$customer['image'])}} "width="200px" height="200px"></td>
+                                <td><img src="{{asset('images/'.$customer['image'])}} "width="200px" height="200px"></td>
                                 <td><a href= "{{route('customers.show', $customer['id'])}}"><button>Show</button></a></td>
                                 <td><a href= "{{route('customers.edit', $customer['id'])}}"><button>Edit</button></a></td>
                                 <td> <form action="{{route('customers.destroy', $customer['id'])}}" method="post">
