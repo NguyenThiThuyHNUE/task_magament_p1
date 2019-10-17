@@ -48,7 +48,7 @@ class CustomerService implements CustomerServiceInterface
             $filExtenxion= $file->getClientOriginalExtension();
             $fileName= $request-> inputFileName;
             $newFileName = "$fileName.$filExtenxion";
-            $request->file('inputFile')->storeAs('',$newFileName);
+            $request->file('inputFile')->storeAs('public/images',$newFileName);
             $customer->image= $newFileName;
         }
         return $this->customerRepository->store($customer);
