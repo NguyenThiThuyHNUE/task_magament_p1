@@ -24,6 +24,7 @@
                     <th scope="col">Hometown</th>
                     <th scope="col">Species</th>
                     <th scope="col">Image</th>
+                    <th scope="col">Info</th>
                     <th></th>
                     <th></th>
                 </tr>
@@ -39,9 +40,10 @@
                             <th scope="row">{{++$key}}</th>
                             <td>{{$product['name']}}</td>
                             <td>{{$product['price']}}</td>
-                            <td>{{$product['hometown']}}</td>
+                            <td>{{$product->city['name']}}</td>
                             <td>{{$product['species']}}</td>
                             <td><img src="{{asset('storage/images/'.$product['Image'])}}"height="50px" width="150px" ></td>
+                            <td>{{$product['info']}}</td>
                             <td><a href= "{{route('products.show', $product['id'])}}"><button>Show</button></a></td>
                             <td><a href= "{{route('products.edit', $product['id'])}}"><button>Edit</button></a></td>
                             <td> <form action="{{route('products.destroy', $product['id'])}}" method="post">

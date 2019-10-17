@@ -49,11 +49,14 @@
                     Địa điểm
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-{{--                    @foreach($citys as $city)--}}
-{{--                    <a class="dropdown-item" href="#" >{{$city['hometown']}}</a>--}}
-                    <a class="dropdown-item" href="#">Thái Bình</a>
-                    <a class="dropdown-item" href="#">Ninh Bình</a>
-{{--                        @endforeach--}}
+{{--                    @foreach($cities as $city)--}}
+                    <a class="dropdown-item" href="#" >Thái Bình</a>
+                    <a class="dropdown-item" href="#" >Nam Định</a>
+                    <a class="dropdown-item" href="#" >Hà Nội</a>
+                    <a class="dropdown-item" href="#" >Hà Giang</a>
+                    <a class="dropdown-item" href="#" >Tuyên Quang</a>
+                    <a class="dropdown-item" href="#" >Cao Bằng</a>
+{{--                    @endforeach--}}
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -77,7 +80,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('user.index')}}">Giới thiệu</a>
+                <a class="nav-link" href="{{route('city.list')}}">Giới thiệu</a>
             </li>
 
 {{--            <li class="nav-item">--}}

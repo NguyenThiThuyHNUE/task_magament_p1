@@ -26,7 +26,7 @@ class CreateProductRequest extends FormRequest
         return [
             'name'=>'required',
             'price'=>'required',
-            'hometown'=>'required',
+            'city_id'=>'required',
             'species'=>'required',
             'inputFile'=>'required'
         ];
@@ -36,10 +36,10 @@ class CreateProductRequest extends FormRequest
     {
         return [
           'name.required'=>'Tên sản phẩm không được để trống',
-          'price.required'=>'Tên sản phẩm không được để trống',
-          'hometown.required'=>'Tên sản phẩm không được để trống',
-          'species.required'=>'Tên sản phẩm không được để trống',
-          'inputFile.required'=>'Tên sản phẩm không được để trống'
+          'price.required'=>'Giá không được để trống',
+          'city_id.required'=>'Địa điểm không được để trống',
+          'species.required'=>'Loại sản phẩm không được để trống',
+          'inputFile.required'=>'File không được để trống'
         ];
     }
 

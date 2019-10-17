@@ -18,8 +18,8 @@ class DatabaseSeeder extends Seeder
         $this->call(blogTableSeeder::class);
         $this->call(update_tabla_products_seeder::class);
         $this->call(update1_tabla_products_seeder::class);
-
-
+        $this->call(citiesTableSeeder::class);
+        $this->call(add_city_id_table_product::class);
 
     }
 }

@@ -20,7 +20,7 @@ class update1_tabla_products_seeder extends Seeder
             ->update(['info' => "  Bánh phở ở đâu cũng có nhưng có lẽ chỉ duy nhất người Hà Nội mới làm món đó cầu kỳ như vậy. Cầu kỳ trong cách pha cơm nguội vào bột để tạo độ dai, tráng từng chiếc bánh rồi lại thái bằng tay, tất cả những công đoạn tỉ mỉ này đã tạo nên nét rất riêng, góp phần gìn giữ và lưu truyền tinh hoa món phở cho người Tràng An."]);
 
         DB::table('products')
-            ->where('id', 6)
+            ->where('id', 2)
             ->update(['info' => "Theo lời kể của những người làm bánh đậu xanh tại Hải Dương, khi xưa, vua Bảo Đại kinh lý qua trấn Hải Dương được nhân dân dâng lên một loại bánh làm từ đỗ xanh có vị ngọt thanh đạm. Sau khi thưởng thức, vua thấy ngon, ban sắc lệnh khen ngợi. Trên sắc có hình rồng vàng, tượng trưng cho hoàng gia. Từ đó, bánh đậu xanh rồng vàng ra đời. "]);
         DB::table('products')
             ->where('id', 7)

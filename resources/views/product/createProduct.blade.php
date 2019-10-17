@@ -38,9 +38,14 @@
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Hometown</label>
-        <input type="text" class="form-control" name="hometown" id="exampleInputPassword1" placeholder="">
-        @if($errors->has('hometown'))
-            <span  class="text-danger">{{$errors->first('hometown')}}</span>
+{{--        <input type="text" class="form-control" name="city_id" id="exampleInputPassword1" placeholder="">--}}
+        <select name="city_id">
+            @foreach($cities as $city)
+            <option value="{{$city->id}}">{{$city->name}}</option>
+            @endforeach
+        </select>
+        @if($errors->has('city_id'))
+            <span  class="text-danger">{{$errors->first('city_id')}}</span>
         @endif
     </div>
     <div class="form-group">
@@ -70,7 +75,7 @@
     <div class="form-group">
         <label for="exampleInputPassword1">Info</label>
 
-        <label for="editor1"></label><textarea name="editor1" id="editor1" rows="10" cols="80">
+        <label for="editor1"></label><textarea name="info" id="info" rows="10" cols="80">
                 This is my textarea to be replaced with CKEditor.
             </textarea>
 
@@ -79,7 +84,7 @@
 </form>
 
 <script>
-    CKEDITOR.replace( 'editor1' );
+    CKEDITOR.replace( 'info' );
 </script>
 <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

@@ -31,12 +31,17 @@
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Hometown</label>
-        <input type="text" class="form-control" name="hometown" id="exampleInputPassword1" value="{{$products['hometown']}}">
+        <select name="city_id">
+            @foreach($cities as $city)
+                <option value="{{$city->id}}">{{$city->name}}</option>
+            @endforeach
+        </select>
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Species</label>
         <input type="text" class="form-control" name="species" id="exampleInputPassword1" value="{{$products['species']}}">
     </div>
+
     <div class="form-group">
         <label for="inputFileName">Image</label>
         <p><img src="{{asset('storage/images/'.$products['Image'])}}"height="50px" width="150px" ></p>
@@ -48,6 +53,10 @@
                class="form-control-file"
                id="inputFile"
                name="inputFile">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Info</label>
+        <textarea type="text" class="form-control" name="info" id="exampleInputPassword1" >{{$products['info']}}</textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

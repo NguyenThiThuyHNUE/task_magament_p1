@@ -56,3 +56,15 @@ Route::middleware('locale')->resource('feedbacks','FeedbackController');
 
 Route::post('change-lang/{lang}','LangController@ChangeLanguage')->name('change.language');
 
+
+Route::get('listCity','CityController@getAll')->name('city.list');
+Route::get('showCity/{id}','CityController@show')->name('city.show');
+Route::get('createCity','CityController@create')->name('city.create');
+Route::post('createCity','CityController@store')->name('city.store');
+Route::get('editCity/{id}','CityController@edit')->name('city.edit');
+Route::patch('editCity/{id}','CityController@update')->name('city.update');
+Route::get('{id}','CityController@delete')->name('city.delete');
+Route::delete('{id}','CityController@delete')->name('city.delete');
+
+
+Route::get('city','LayoutController@listCity')->name('layout');

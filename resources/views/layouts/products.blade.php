@@ -50,7 +50,7 @@
                                 <h3>{{number_format($product['price']) }}</h3>
                             </div>
                             <div class="month">
-                                <p>{{$product['hometown']}}</p>
+                                <p>{{$product->city['name']}}</p>
 
                             </div>
                         </div>

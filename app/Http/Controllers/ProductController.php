@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateProductRequest;
 use App\Product;
+use App\Service\CityServiceInterface;
 use App\Service\ProductServiceInterface;
 use Illuminate\Http\Request;
 
@@ -11,12 +12,13 @@ class ProductController extends Controller
 {
 
     protected $productService;
-    public function __construct(ProductServiceInterface $productService)
+    protected $cityService;
+    public function __construct(ProductServiceInterface $productService, CityServiceInterface $cityService)
     {
         $this->productService = $productService;
+        $this->cityService= $cityService;
         $this->middleware('auth');
     }
-
     public function index()
     {
         $products= $this->productService->getAll();
@@ -26,7 +28,8 @@ class ProductController extends Controller
 
     public function create()
     {
-        return view('product/createProduct');
+        $cities= $this->cityService->getAll();
+        return view('product.createProduct',compact('cities'));
 
     }
 
@@ -49,7 +52,8 @@ class ProductController extends Controller
     public function edit($id)
     {
         $products=$this->productService->edit($id);
-        return view('product.editProduct', compact('products'));
+        $cities= $this->cityService->getAll();
+        return view('product.editProduct', compact('products','cities'));
     }
 
 

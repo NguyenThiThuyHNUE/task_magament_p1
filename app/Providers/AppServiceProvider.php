@@ -3,9 +3,11 @@
 namespace App\Providers;
 
 use App\Repository\BillRerositoryInterface;
+use App\Repository\CityRepositoryInterface;
 use App\Repository\FeedbackRepositoryInterface;
 use App\Repository\CustomerRepositoryInterface;
 use App\Repository\impl\BillRepository;
+use App\Repository\impl\CityRepository;
 use App\Repository\impl\FeedbackRepository;
 use App\Repository\impl\CustomerRepository;
 use App\Repository\impl\ProductRepository;
@@ -13,9 +15,11 @@ use App\Repository\ProductRepositoryInterface;
 use App\Repository\UserRepositoryInterface;
 use App\Repository\impl\UserRepository;
 use App\Service\BillServiceInterface;
+use App\Service\CityServiceInterface;
 use App\Service\FeedbackServiceInterface;
 use App\Service\CustomerServiceInterface;
 use App\Service\impl\BillService;
+use App\Service\impl\CityService;
 use App\Service\impl\FeedbackService;
 use App\Service\impl\CustomerService;
 use App\Service\impl\ProductService;
@@ -43,6 +47,8 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(CustomerServiceInterface::class,CustomerService::class);
         $this->app->singleton(FeedbackServiceInterface::class,FeedbackService::class);
         $this->app->singleton(FeedbackRepositoryInterface::class,FeedbackRepository::class);
+        $this->app->singleton(CityServiceInterface::class,CityService::class);
+        $this->app->singleton(CityRepositoryInterface::class,CityRepository::class);
 
     }
 

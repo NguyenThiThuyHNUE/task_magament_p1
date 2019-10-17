@@ -11,4 +11,7 @@ class Product extends Model
     public function bills(){
         return $this-> belongsToMany('App\Bill','bill_product');
     }
+    public function city(){
+        return $this-> belongsTo('App\City');
+    }
 }

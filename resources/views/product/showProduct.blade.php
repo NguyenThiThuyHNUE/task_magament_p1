@@ -18,6 +18,7 @@
             <th> Hometown </th>
             <th> Species </th>
             <th> Image </th>
+            <th> Info</th>
         </tr>
         <tr>
             <td>{{$products['name']}}</td>
@@ -25,6 +26,8 @@
             <td>{{$products['hometown']}}</td>
             <td>{{$products['species']}}</td>
             <td><img src="{{asset('storage/images/'.$products['Image'])}}"height="50px" width="150px" ></td>
+            <td>{{$products['info']}}</td>
+
         </tr>
 
 

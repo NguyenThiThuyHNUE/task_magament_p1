@@ -170,7 +170,7 @@
                                        @if($feedback->customer_id != null)
                                        value="{{$feedback->customer['name']}}"
                                        @else
-                                            value="{{$feedback->name}}"
+                                            value="{{$feedback->name_user}}"
                                        @endif
                                 >
                             </div>

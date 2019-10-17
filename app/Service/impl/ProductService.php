@@ -24,8 +24,9 @@ class ProductService implements ProductServiceInterface
         $product = new Product();
         $product->name = $request->input('name');
         $product->price = $request->input('price');
-        $product->hometown = $request->input('hometown');
+        $product->city_id = $request->input('city_id');
         $product->species = $request->input('species');
+        $product->info = $request->input('info');
 
         if (!$request->hasFile('inputFile')) {
             $product->image = $request->inputFile;
@@ -37,8 +38,6 @@ class ProductService implements ProductServiceInterface
             $request->file('inputFile')->storeAs('public/images', $newFileName);
             $product->image = $newFileName;
         }
-
-
 
         return $this->productRepository->store($product);
 
@@ -64,8 +63,9 @@ class ProductService implements ProductServiceInterface
         $product =Product::findorfail($id);
         $product->name = $request->input('name');
         $product->price = $request->input('price');
-        $product->hometown = $request->input('hometown');
+        $product->city_id = $request->input('city_id');
         $product->species = $request->input('species');
+        $product->info = $request->input('info');
 
         if (!$request->hasFile('inputFile')) {
             $product->image = $request->inputFile;

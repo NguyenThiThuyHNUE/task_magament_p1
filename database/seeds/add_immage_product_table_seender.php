@@ -15,12 +15,12 @@ class add_immage_product_table_seender extends Seeder
     {
         DB::table('products')
             ->where('id', 1)
-            ->update(['image' => "image/banhcay.jpg"]);
+            ->update(['image' => "banhcay.jpg"]);
         DB::table('products')
             ->where('id', 2)
-            ->update(['image' => "image/banhcay.jpg"]);
+            ->update(['image' => "banhcay.jpg"]);
         DB::table('products')
             ->where('id', 3)
-            ->update(['image' => "image/banhdauxanh.jpg"]);
+            ->update(['image' => "banhdauxanh.jpg"]);
     }
 }

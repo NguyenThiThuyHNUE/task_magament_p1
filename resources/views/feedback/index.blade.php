@@ -20,7 +20,7 @@
                             @if($feedback->customer_id != null)
                             <strong>{{$feedback->customer['name']}}</strong>
                             @else
-                                <strong>{{$feedback->name}}</strong>
+                                <strong>{{$feedback->name_user}}</strong>
                             @endif
                         </a>
                         <span class="float-right"><i class="text-warning fa fa-star"></i></span>
