@@ -42,7 +42,7 @@
                             <td>{{$product['price']}}</td>
                             <td>{{$product->city['name']}}</td>
                             <td>{{$product['species']}}</td>
-                            <td><img src="{{asset('storage/images/'.$product['Image'])}}"height="50px" width="150px" ></td>
+                            <td><img src="{{asset('images/'.$product['Image'])}}"height="50px" width="150px" ></td>
                             <td>{{$product['info']}}</td>
                             <td><a href= "{{route('products.show', $product['id'])}}"><button>Show</button></a></td>
                             <td><a href= "{{route('products.edit', $product['id'])}}"><button>Edit</button></a></td>

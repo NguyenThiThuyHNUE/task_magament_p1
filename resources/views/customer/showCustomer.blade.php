@@ -29,7 +29,7 @@
         <tr>
             <td>Ảnh</td>
             <td><input type="text" name="inputFileName" placeholder="Tên ảnh"></td>
-            <p><img src="{{asset('storage/images/'.$customers['image'])}}"height="200px" width="200px" ></p>
+            <p><img src="{{asset('images/'.$customers['image'])}}"height="200px" width="200px" ></p>
         </tr>
         <tr>
             <td></td>

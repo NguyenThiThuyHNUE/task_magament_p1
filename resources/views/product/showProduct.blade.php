@@ -25,7 +25,7 @@
             <td>{{$products['price']}}</td>
             <td>{{$products['hometown']}}</td>
             <td>{{$products['species']}}</td>
-            <td><img src="{{asset('storage/images/'.$products['Image'])}}"height="50px" width="150px" ></td>
+            <td><img src="{{asset('images/'.$products['Image'])}}"height="50px" width="150px" ></td>
             <td>{{$products['info']}}</td>
 
         </tr>
