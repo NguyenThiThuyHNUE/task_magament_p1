@@ -39,6 +39,7 @@
                                 @enderror
                             </div>
                         </div>
+                        <a href="{{ route('facebook.login')}}" class="btn btn-primary">Facebook Login</a>
 
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">

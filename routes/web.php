@@ -29,6 +29,8 @@ Route::middleware('locale')->prefix('user')->group(function (){
 Route::middleware('locale')->get('menu', 'menuController@index')->name('menu.index');
 
 Route::middleware('locale')->resource('products','ProductController');
+Route::get('search','HomeController@search')->name('product.search');
+//Route::get('search','HomeController@search_price')->name('product.search_price');
 
 Route::middleware('locale')->resource('customers','CustomerController');
 
@@ -43,6 +45,7 @@ Route::middleware('locale')->get('bills/show{id}','BillController@show')->name('
 
 Route::middleware('locale')->get('huongque','HomeController@show')->name('display.show');
 Route::middleware('locale')->get('huongque/{id}','HomeController@show_id')->name('display.show_id');
+Route::middleware('locale')->get('huongqueCity','HomeController@listCity')->name('info.city');
 Route::middleware('locale')->get('/cart','ShoppingCartController@index')->name('cart.index');
 Route::middleware('locale')->get('/add-to-cart/{id}','ShoppingCartController@addToCart')->name('cart.addToCart');
 Route::middleware('locale')->get('/remove-to-cart/{id}','ShoppingCartController@removeProductIntoCart')->name('cart.removeProductIntoCart');
@@ -68,3 +71,8 @@ Route::delete('{id}','CityController@delete')->name('city.delete');
 
 
 Route::get('city','LayoutController@listCity')->name('layout');
+
+Route::get('auth/facebook', 'FacebookAuthController@redirectToProvider')->name('facebook.login') ;
+Route::get('auth/facebook/callback', 'FacebookAuthController@handleProviderCallback');
+
+//Route::get('showCity','HomeController@showcity')->name('');

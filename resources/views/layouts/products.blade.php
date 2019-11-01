@@ -42,7 +42,7 @@
                 <div class="spe-prods">
                     <div class="mainbox">
                         <h3>{{$product['name']}}</h3>
-                       <a href="{{route('display.show_id',$product['id'])}}"><img class="rotprod" src="{{asset('images/'.$product['Image'])}}"></a>
+                       <a href="{{route('display.show_id',$product['id'])}}"><img class="rotprod" src="{{asset('storage/images/'.$product['Image'])}}"></a>
                     </div>
                     <div class="price-big">
                         <div>

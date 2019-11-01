@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Service\UserServiceInterface;
 use App\User;
+use Illuminate\Auth\Access\Gate;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -46,8 +47,9 @@ class UserController extends Controller
     }
 
     public function edit( $id ){
-
-
+    if(Gate::allows('CRUD-user')){
+        return abort('403');
+    }
 
         $users = $this->userService->edit($id);
 

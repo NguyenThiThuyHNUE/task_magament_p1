@@ -11,7 +11,7 @@
 @section('content')
 <body>
     <form>
-        <table border="1">
+        <table border="1" width="60%">
             <tr>
                 <th>Tên sản phẩm</th>
                 <th>Giá</th>
@@ -20,7 +20,7 @@
             @foreach($bills->products as $bill)
             <tr>
                 <td>{{$bill->name}}</td>
-                <td>{{$bill->price}}</td>
+                <td>{{number_format($bill->price).'VND'}}</td>
                 <td><img src="{{asset('storage/images/'.$bill->Image)}}" width="200px" height="200px"></td>
             </tr>
           @endforeach

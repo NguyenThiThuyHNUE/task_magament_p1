@@ -12,11 +12,9 @@
 @section('content')
 <h2>Edit User </h2>
 <form method="post">
-{{--    <input type="hidden" name="__method" value="put">--}}
     @csrf
     {{method_field('PATCH')}}
 
-{{--  <input type="hidden" name="_method" value="patch">--}}
 
     <table>
 

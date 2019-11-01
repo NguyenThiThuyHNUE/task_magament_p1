@@ -41,7 +41,9 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{route('products.index')}}">Thông tin sản phẩm</a>
                     <a class="dropdown-item" href="{{route('user.index')}}">Thông tin Admin</a>
-                    <a class="dropdown-item" href="{{route('customers.index')}}">Thông tin người dùng</a>
+                    <a class="dropdown-item" href="{{route('customers.index')}}">Thông tin khách hàng</a>
+                    <a class="dropdown-item" href="{{route('city.list')}}">Thông tin thành phố</a>
+                    <a class="dropdown-item" href="{{route('feedbacks.index')}}">Thông tin phản hồi</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -80,7 +82,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('city.list')}}">Giới thiệu</a>
+                <a class="nav-link" href="{{route('info.city')}}">Giới thiệu</a>
             </li>
 
 {{--            <li class="nav-item">--}}
@@ -98,7 +100,7 @@
             <li class="nav-item">
                 <a class="nav-link " href="{{route('cart.index')}}" tabindex="-1" aria-disabled="true">
                     <div class="nav-link ">
-                        <img src="{{asset('storage/images/giohang.jpeg')}}" width="50px">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqgSNoDwLQaHzJCepXz5FdFUQMJaOZR2uGB-n2ukQ0g52vu5Xl" width="50px">
                         <span style="color: #3f9ae5">Cart: @if(\Illuminate\Support\Facades\Session::has('cart'))
                                 {{\Illuminate\Support\Facades\Session::get('cart')->totalQty}}@endif
                         </span>
@@ -106,8 +108,8 @@
                 </a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search Product" aria-label="Search">
+        <form class="form-inline my-2 my-lg-0" method="get" action="{{route('product.search')}}">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Product" aria-label="Search" name="search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
