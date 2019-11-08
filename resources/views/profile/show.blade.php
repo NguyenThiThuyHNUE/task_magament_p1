@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+@section('content')
 <body>
   <form method="post">
       <table>
@@ -29,4 +32,6 @@
       </table>
   </form>
 </body>
+    @endsection
+
 </html>

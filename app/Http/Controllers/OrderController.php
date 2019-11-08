@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Service\CustomerServiceInterface;
+use App\Service\impl\UserService;
+use App\Service\UserServiceInterface;
 use Illuminate\Support\Facades;
 use App\Http\Requests\CreateCustomerRequest;
 
@@ -15,6 +17,7 @@ class OrderController extends Controller
 
     public function __construct(CustomerServiceInterface $customerService)
   {
+      $this->middleware('auth');
       $this->customerService = $customerService;
   }
 

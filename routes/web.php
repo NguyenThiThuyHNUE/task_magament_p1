@@ -32,7 +32,7 @@ Route::middleware('locale')->resource('products','ProductController');
 Route::get('search','HomeController@search')->name('product.search');
 //Route::get('search','HomeController@search_price')->name('product.search_price');
 
-Route::middleware('locale')->resource('customers','CustomerController');
+
 
 
 Route::middleware('locale')->get('profile','ProfileController@show')->name('profile.show');
@@ -43,7 +43,7 @@ Route::middleware('locale')->get('bills/show{id}','BillController@show')->name('
 
 
 
-Route::middleware('locale')->get('huongque','HomeController@show')->name('display.show');
+Route::middleware('locale')->get('/huongque','HomeController@show')->name('display.show');
 Route::middleware('locale')->get('huongque/{id}','HomeController@show_id')->name('display.show_id');
 Route::middleware('locale')->get('huongqueCity','HomeController@listCity')->name('info.city');
 Route::middleware('locale')->get('/cart','ShoppingCartController@index')->name('cart.index');

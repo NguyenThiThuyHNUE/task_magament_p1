@@ -40,8 +40,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{route('products.index')}}">Thông tin sản phẩm</a>
-                    <a class="dropdown-item" href="{{route('user.index')}}">Thông tin Admin</a>
-                    <a class="dropdown-item" href="{{route('customers.index')}}">Thông tin khách hàng</a>
+                    <a class="dropdown-item" href="{{route('user.index')}}">Thông tin người dùng </a>
                     <a class="dropdown-item" href="{{route('city.list')}}">Thông tin thành phố</a>
                     <a class="dropdown-item" href="{{route('feedbacks.index')}}">Thông tin phản hồi</a>
                 </div>
@@ -82,7 +81,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('info.city')}}">Giới thiệu</a>
+                <a class="nav-link" href="{{route('info.city')}}">Thành phố</a>
             </li>
 
 {{--            <li class="nav-item">--}}

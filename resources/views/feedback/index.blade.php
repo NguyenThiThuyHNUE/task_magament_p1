@@ -7,6 +7,7 @@
 <div class="container">
     <h2 class="text-center">Ý kiến khách hàng</h2>
     @foreach($feedbacks as $feedback)
+
     <div class="card">
         <div class="card-body">
             <div class="row">
@@ -17,11 +18,7 @@
                 <div class="col-md-10">
                     <p>
                         <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html">
-                            @if($feedback->customer_id != null)
-                            <strong>{{$feedback->customer['name']}}</strong>
-                            @else
-                                <strong>{{$feedback->name_user}}</strong>
-                            @endif
+                          {{$user['name']}}
                         </a>
                         <span class="float-right"><i class="text-warning fa fa-star"></i></span>
                         <span class="float-right"><i class="text-warning fa fa-star"></i></span>

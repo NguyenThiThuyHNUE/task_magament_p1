@@ -17,7 +17,14 @@ class userSeeder extends Seeder
         $user->password='12345678';
         $user->provider='a';
         $user->provider_id='a';
-        $user->role='1';
+        $user->save();
+
+        $user= new \App\User();
+        $user->name='phuc';
+        $user->email='quocphuc@gmail.com';
+        $user->password='12345678';
+        $user->provider='a';
+        $user->provider_id='a';
         $user->save();
     }
 }

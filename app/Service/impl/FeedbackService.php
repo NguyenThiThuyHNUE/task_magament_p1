@@ -31,7 +31,6 @@ class FeedbackService implements FeedbackServiceInterface
     public function store($request)
     {
         $feedbacks = new Feedback();
-        $feedbacks->name_user = $request->input('name');
         $feedbacks->content = $request->input('content');
         return $this->feedBackRepository->store($feedbacks);
     }
@@ -44,7 +43,6 @@ class FeedbackService implements FeedbackServiceInterface
     public function update($request, $id)
     {
         $feedback = Feedback::findOrFail($id);
-        $feedback->name_user = $request->input('name');
         $feedback->content = $request->input('content');
         return $this->feedBackRepository->store($feedback);
 

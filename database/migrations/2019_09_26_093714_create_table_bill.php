@@ -15,7 +15,7 @@ class CreateTableBill extends Migration
     {
         Schema::create('bills', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('customer_id');
+            $table->unsignedInteger('user_id');
             $table->date('pay_date');
             $table->integer('total');
             $table->timestamps();

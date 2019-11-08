@@ -31,6 +31,15 @@ class HomeController extends Controller
         return view('search.list',compact('products'));
     }
 
+//    public function search_price(Request $request){
+//        $search= $request->get('search');
+//        $products= DB::table('products')->where('name','like','%'.$search.'%')
+//            ->orWhere('price',$search)
+//            ->orWhere('species',$search)
+//            ->get();
+//        return view('search.list',compact('products'));
+//    }
+
     public function show(){
         $products=$this->productService->getAll();
         return view('layouts.products',compact('products'));
