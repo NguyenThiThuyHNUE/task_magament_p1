@@ -47,9 +47,9 @@ class UserController extends Controller
     }
 
     public function edit( $id ){
-    if(Gate::allows('CRUD-user')){
-        return abort('403');
-    }
+//    if(Gate::allows('CRUD-user')){
+//        return abort('403');
+//    }
 
         $users = $this->userService->edit($id);
 

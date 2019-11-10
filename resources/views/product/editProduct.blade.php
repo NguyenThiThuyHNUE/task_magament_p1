@@ -32,6 +32,7 @@
     <div class="form-group">
         <label for="exampleInputPassword1">Hometown</label>
         <select name="city_id">
+            <option value="{{$products->city['name']}}">{{$products->city['name']}}</option>
             @foreach($cities as $city)
                 <option value="{{$city->id}}">{{$city->name}}</option>
             @endforeach
@@ -39,7 +40,12 @@
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Species</label>
-        <input type="text" class="form-control" name="species" id="exampleInputPassword1" value="{{$products['species']}}">
+        <select name="species">
+            <option value="{{$products['species']}}">{{$products['species']}}</option>
+            <option value="Thực phẩm">Thực phẩm</option>
+            <option value="Đồ uống">Đồ uống</option>
+            <option value="Bánh kẹo">Bánh kẹo</option>
+        </select>
     </div>
 
     <div class="form-group">

@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="{{route('display.show')}}">Trang chủ</a>
@@ -31,9 +30,6 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-{{--            <li class="nav-item active">--}}
-{{--                <a class="nav-link" href="{{route('products.index')}}">Trang chủ <span class="sr-only">(current)</span></a>--}}
-{{--            </li>--}}
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Quản lý
@@ -45,48 +41,10 @@
                     <a class="dropdown-item" href="{{route('feedbacks.index')}}">Thông tin phản hồi</a>
                 </div>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Địa điểm
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-{{--                    @foreach($cities as $city)--}}
-                    <a class="dropdown-item" href="#" >Thái Bình</a>
-                    <a class="dropdown-item" href="#" >Nam Định</a>
-                    <a class="dropdown-item" href="#" >Hà Nội</a>
-                    <a class="dropdown-item" href="#" >Hà Giang</a>
-                    <a class="dropdown-item" href="#" >Tuyên Quang</a>
-                    <a class="dropdown-item" href="#" >Cao Bằng</a>
-{{--                    @endforeach--}}
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Thể loại
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Bánh kẹo</a>
-                    <a class="dropdown-item" href="#">Thực phẩm</a>
-                    <a class="dropdown-item" href="#">Đồ uống</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Giá
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#"> Nhỏ hơn 1.000.000 VND</a>
-                    <a class="dropdown-item" href="#">1.000.000 VND - 10.000.000 VND</a>
-                    <a class="dropdown-item" href="#">Lớn hơn 10.000.000 VND</a>
-                </div>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('info.city')}}">Thành phố</a>
             </li>
 
-{{--            <li class="nav-item">--}}
-{{--                <a class="nav-link " href="{{route('user.index')}}" tabindex="-1" aria-disabled="true">Thông tin người dùng</a>--}}
-{{--            </li>--}}
 
             <li class="nav-item">
                 <a class="nav-link " href="{{route('bill.index')}}" tabindex="-1" aria-disabled="true">Thông tin hóa đơn</a>

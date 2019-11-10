@@ -30,7 +30,8 @@ Route::middleware('locale')->get('menu', 'menuController@index')->name('menu.ind
 
 Route::middleware('locale')->resource('products','ProductController');
 Route::get('search','HomeController@search')->name('product.search');
-//Route::get('search','HomeController@search_price')->name('product.search_price');
+Route::get('searchbycity','HomeController@search_city')->name('product.search_city');
+Route::get('searchbyspecies','HomeController@search_species')->name('product.search_species');
 
 
 
@@ -46,6 +47,8 @@ Route::middleware('locale')->get('bills/show{id}','BillController@show')->name('
 Route::middleware('locale')->get('/huongque','HomeController@show')->name('display.show');
 Route::middleware('locale')->get('huongque/{id}','HomeController@show_id')->name('display.show_id');
 Route::middleware('locale')->get('huongqueCity','HomeController@listCity')->name('info.city');
+
+
 Route::middleware('locale')->get('/cart','ShoppingCartController@index')->name('cart.index');
 Route::middleware('locale')->get('/add-to-cart/{id}','ShoppingCartController@addToCart')->name('cart.addToCart');
 Route::middleware('locale')->get('/remove-to-cart/{id}','ShoppingCartController@removeProductIntoCart')->name('cart.removeProductIntoCart');

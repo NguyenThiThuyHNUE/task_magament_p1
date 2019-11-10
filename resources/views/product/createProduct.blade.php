@@ -50,7 +50,11 @@
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Species</label>
-        <input type="text" class="form-control" name="species" id="exampleInputPassword1" placeholder="">
+        <select name="species">
+            <option value="Thực phẩm">Thực phẩm</option>
+            <option value="Đồ uống">Đồ uống</option>
+            <option value="Bánh kẹo">Bánh kẹo</option>
+        </select>
         @if($errors->has('species'))
             <span  class="text-danger">{{$errors->first('species')}}</span>
         @endif

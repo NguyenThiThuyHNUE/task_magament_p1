@@ -3,35 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="2b3ecf73-a983-4a7b-b25a-9a26fe44ed8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Bill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Bill.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Customer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Feedback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/CustomerRepositoryInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/impl/CustomerRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Service/CustomerServiceInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Service/impl/CustomerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Service/impl/FeedbackService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/impl/FeedbackService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_25_162152_create_customer_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_25_162416_edit_customer_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_26_093714_create_table_bill.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_26_093714_create_table_bill.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_15_093646_create_table_feeedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_15_093646_create_table_feeedbacks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_18_032654_add_column_role_table_user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_18_094809_add_provider_table_users.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/addColumnRoleTableUsers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/userSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/userSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/feedback/createFeedback.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedback/createFeedback.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/indexUser.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/city/listhome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/city/listhome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product/createProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product/createProduct.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product/editProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product/editProduct.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/search/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -282,7 +261,9 @@
       <workItem from="1573091352085" duration="13000" />
       <workItem from="1573093644421" duration="60000" />
       <workItem from="1573095246732" duration="23000" />
-      <workItem from="1573176219083" duration="538000" />
+      <workItem from="1573176219083" duration="13463000" />
+      <workItem from="1573286951447" duration="2539000" />
+      <workItem from="1573399974081" duration="1519000" />
     </task>
     <servers />
   </component>

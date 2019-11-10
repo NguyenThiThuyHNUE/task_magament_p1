@@ -17,14 +17,26 @@
 
     <link rel="stylesheet" href="../../css/animate.css">
 
-
-
-
-
 </head>
 @section('content')
     <body >
+    <form action="{{route('product.search_city')}}">
+        <select name="city_id" onchange="this.form.submit()">
+            <option value=""> Chọn thành phố</option>
+            @foreach($cities as $city)
+                <option value="{{$city->id}}">{{$city->name}}</option>
+            @endforeach
+        </select>
+    </form>
 
+    <form action="{{route('product.search_species')}}">
+        <select name="species" onchange="this.form.submit()">
+            <option value="">Chọn loại</option>
+            <option value="Thực phẩm">Thực phẩm</option>
+            <option value="Đồ uống">Đồ uống</option>
+            <option value="Bánh kẹo">Bánh kẹo</option>
+        </select>
+    </form>
     <!-- Special Products section starts-->
     <div class="section outdiv" id="specialities">
         <div class="container">
@@ -64,47 +76,6 @@
                             </div>
                         @endforeach
                     @endif
-
-
-                    {{--                <div class="spe-prods">--}}
-                    {{--                    <div class="mainbox">--}}
-                    {{--                        <h3>Special 2</h3>--}}
-                    {{--                        <img class="rotprod"  src="http://image.vovworld.vn/w500/Uploaded/vovworld/qosrgt/2016_09_23/cay.jpg" alt="">--}}
-                    {{--                    </div>--}}
-                    {{--                    <div class="price-big">--}}
-                    {{--                        <div>--}}
-                    {{--                            <div class="floatting-price">--}}
-                    {{--                                <h3>$30</h3>--}}
-                    {{--                            </div>--}}
-                    {{--                            <div class="month">--}}
-                    {{--                                <customerService> / 6 piece</customerService>--}}
-                    {{--                            </div>--}}
-
-                    {{--                        </div>--}}
-                    {{--                        <div class="ordersection">--}}
-                    {{--                            <a href="#" class="buybtn">Order</a>--}}
-                    {{--                        </div>--}}
-                    {{--                    </div>--}}
-                    {{--                </div>--}}
-                    {{--                <div class="spe-prods">--}}
-                    {{--                    <div class="mainbox">--}}
-                    {{--                        <h3>Special 3</h3>--}}
-                    {{--                        <img class="rotprod" src="http://image.vovworld.vn/w500/Uploaded/vovworld/qosrgt/2016_09_23/cay.jpg" alt="">--}}
-                    {{--                    </div>--}}
-                    {{--                    <div class="price-big">--}}
-                    {{--                        <div>--}}
-                    {{--                            <div class="floatting-price">--}}
-                    {{--                                <h3>$60</h3>--}}
-                    {{--                            </div>--}}
-                    {{--                            <div class="month">--}}
-                    {{--                                <customerService> / Dozen</customerService>--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
-                    {{--                        <div class="ordersection">--}}
-                    {{--                            <a href="#" class="buybtn">Order</a>--}}
-                    {{--                        </div>--}}
-                    {{--                    </div>--}}
-                    {{--                </div>--}}
                 </div>
             </div>
         </div>

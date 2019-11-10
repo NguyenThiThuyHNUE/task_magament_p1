@@ -31,18 +31,26 @@ class HomeController extends Controller
         return view('search.list',compact('products'));
     }
 
-//    public function search_price(Request $request){
-//        $search= $request->get('search');
-//        $products= DB::table('products')->where('name','like','%'.$search.'%')
-//            ->orWhere('price',$search)
-//            ->orWhere('species',$search)
-//            ->get();
-//        return view('search.list',compact('products'));
-//    }
+    public function search_city(Request $request){
+        $cities= $this->cityService->getAll();
+        $search= $request->get('city_id');
+        $products= DB::table('products')->where('city_id','like','%'.$search.'%')
+            ->get();
+        return view('search.list',compact('products','cities'));
+    }
+
+    public function search_species(Request $request){
+        $cities= $this->cityService->getAll();
+        $search= $request->get('species');
+        $products= DB::table('products')->where('species','like','%'.$search.'%')
+            ->get();
+        return view('search.list',compact('products','cities'));
+    }
 
     public function show(){
         $products=$this->productService->getAll();
-        return view('layouts.products',compact('products'));
+        $cities= $this->cityService->getAll();
+        return view('layouts.products',compact('products','cities'));
     }
     public function show_id($id){
         $products=$this->productService->show($id);
@@ -53,10 +61,6 @@ class HomeController extends Controller
         return view('city.listhome',compact('citys'));
     }
 
-//    public  function showcity($id){
-//        $city= $this->cityService->show($id);
-//        return view('city.show',compact('city'));
-//    }
 
 
 }
