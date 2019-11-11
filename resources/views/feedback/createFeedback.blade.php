@@ -164,7 +164,7 @@
                     <form method="post" action="{{route('feedbacks.store')}}"  id="commentform">
                         @csrf
                         <div id="comment-name" class="form-row">
-                            <input type = "text"  name = "name"  id = "name" value="{{$user->name}}">
+                            <input type = "text"  name = "name"  id = "name" value="{{$user->name}}" disabled>
                         </div>
                         <div id="comment-message" class="form-row">
                             <textarea name = "content" placeholder = "Message" id = "comment" ></textarea>

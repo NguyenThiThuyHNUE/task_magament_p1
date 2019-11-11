@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2b3ecf73-a983-4a7b-b25a-9a26fe44ed8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/city/listhome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/city/listhome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/product/createProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product/createProduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/product/editProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product/editProduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/search/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Service/impl/FeedbackService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/impl/FeedbackService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/feedback/createFeedback.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedback/createFeedback.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedback/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +257,10 @@
       <workItem from="1573095246732" duration="23000" />
       <workItem from="1573176219083" duration="13463000" />
       <workItem from="1573286951447" duration="2539000" />
-      <workItem from="1573399974081" duration="1519000" />
+      <workItem from="1573399974081" duration="2368000" />
+      <workItem from="1573408447967" duration="1428000" />
+      <workItem from="1573455502750" duration="60000" />
+      <workItem from="1573465216159" duration="1526000" />
     </task>
     <servers />
   </component>

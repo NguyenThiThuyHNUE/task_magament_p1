@@ -7,6 +7,7 @@ namespace App\Service\impl;
 use App\Feedback;
 use App\Repository\FeedbackRepositoryInterface;
 use App\Service\FeedbackServiceInterface;
+use Illuminate\Support\Facades\Auth;
 
 class FeedbackService implements FeedbackServiceInterface
 {
@@ -32,6 +33,9 @@ class FeedbackService implements FeedbackServiceInterface
     {
         $feedbacks = new Feedback();
         $feedbacks->content = $request->input('content');
+        $feedbacks->user_id = Auth::user()->id;
+        $feedbacks->name_user = Auth::user()->name;
+
         return $this->feedBackRepository->store($feedbacks);
     }
 
