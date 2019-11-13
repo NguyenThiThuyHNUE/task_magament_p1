@@ -78,4 +78,5 @@ Route::get('city','LayoutController@listCity')->name('layout');
 Route::get('auth/facebook', 'FacebookAuthController@redirectToProvider')->name('facebook.login') ;
 Route::get('auth/facebook/callback', 'FacebookAuthController@handleProviderCallback');
 
-//Route::get('showCity','HomeController@showcity')->name('');
+Route::get('/','MailController@home');
+Route::post('/send/email','MailController@sendemail')->name('send.mail');
