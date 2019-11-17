@@ -11,7 +11,9 @@
 @section('content')
 <body>
 <table>
-    <tr><h1> {{$customers['name'].'Bạn đã thanh toán thành công'}}  </h1></tr>
+    <tr><h3> Cảm ơn bạn đã mua hàng  </h3></tr>
+    <tr>Chúng tôi đã nhận được thông tin của bạn</tr>
+    <tr><h4>Hóa đơn của bạn</h4></tr>
     <tr><img src="http://thuthuatphanmem.vn/uploads/2018/04/24/hinh-dong-dep-11_091100956.gif" width="250px"></tr>
     <tr><h3><a href="{{route('cart.index')}}" style="" >Back</a></h3></tr>
 </table>

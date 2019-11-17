@@ -54,9 +54,7 @@ Route::middleware('locale')->get('/add-to-cart/{id}','ShoppingCartController@add
 Route::middleware('locale')->get('/remove-to-cart/{id}','ShoppingCartController@removeProductIntoCart')->name('cart.removeProductIntoCart');
 Route::middleware('locale')->get('/update-to-cart/{id}','ShoppingCartController@updateProductIntoCart')->name('cart.updateProductIntoCart');
 
-
-Route::middleware('locale')->get('order','OrderController@create')->name('order.create');
-Route::middleware('locale')->post('order','OrderController@store')->name('order.store');
+Route::middleware('locale')->get('order','OrderController@notification')->name('order.notification');
 
 Route::middleware('locale')->resource('feedbacks','FeedbackController');
 
